@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simon Dice</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="StyleSheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="row">
+
+            <div id="header" class="col-12">
+              <div id="titulo">
+              <img id="" src="" alt="simon dice titulo">
+              </div>
+            </div>
+
+            <div id="content" class="col-sm-12 col-lg-7">
+                <div class="row gameboard">
+                    
+                    <div id="pokemonContainer1" class="pokemonContainer col-6">
+                        <div id="pokemon-pik" class="personaje pikachu" data-pokemon="pikachu"></div>
+                    </div>
+
+                    <div id="pokemonContainer2" class="pokemonContainer col-6">
+                        <div id="pokemon-squ" class="personaje squirtle" data-pokemon="squirtle"></div>
+                    </div>
+
+                    <div id="pokemonContainer3" class="pokemonContainer col-6">
+                        <div id="pokemon-bul" class="personaje bulbasaur" data-pokemon="bulbasaur"></div>
+                    </div>
+
+                    <div id="pokemonContainer4" class="pokemonContainer col-6">
+                        <div id="pokemon-cha" class="personaje charmander" data-pokemon="charmander"></div>
+                    </div>
+
+                </div>
+            </div>
+      
+            <div id="sidebar" class=" col-sm-12 col-lg-5">
+              <div class="row col-12 configuracion">
+                  <div class="col-12">
+                    <form>
+                    <label for="nivel-personalizado">Ingresar Nivel:</label><br>
+                    <input type="number" id="nivel-personalizado" value="2">
+                    </form>
+                  </div>
+                  <div class="col-12 align-self-end">
+                    <button id="btnEmpezar" class="btn" onclick="empezarJuego()"><img id="img-btn-iniciar" class="" ></button>
+                  </div>
+              </div>
+              <div class="col-12 configuracion">
+                <p>Nivel actual: <span id="nivelActual"></span></p>
+                <p>Puntuaci&oacute;n actual: <span id="puntuacionActual"></span></p>
+                <p>Mejor puntuaci&oacute;n: <span id="puntuacionMaxima"></span></p>
+              </div>
+            </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Juego Sim&oacute;n dice - Fundamentos de JavaScript - <a href="https://twitter.com/DavidB_M1" rel="autor" target="_blank">David Basto</a></p>
+  </footer>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

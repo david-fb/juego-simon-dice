@@ -1,0 +1,136 @@
+* {
+    font-family: 'Indie Flower', cursive;;
+}
+
+body {
+    margin: 0;
+    background: #F5F5EF;
+  }
+/*======== Incio tablero de juego ========*/
+  .gameboard {
+    height: auto;
+    width: 60%;
+    border-radius: 2%;
+    overflow: hidden;
+    margin: 5% 0% 5% auto;
+    background-color: #df0024;
+    padding: 3vh;
+  }
+
+  .pokemonContainer {
+    height: 50%;
+    padding: 10px;
+    background-color: #f7f7f7;
+  }
+
+  .pikachu {
+    background: #f5ed1a;
+    border: 1px solid #d9d32c;
+    content: url(images/pikachu.png);
+  }
+
+  .squirtle {
+    background: #00ffff;
+    border: 1px solid #27cccc;
+    content: url(images/squirtle.png);
+  }
+
+  .bulbasaur {
+    background: #00ff00;
+    border: 1px solid #2fc92f;
+    content: url(images/bulbasaur.png);
+  }
+
+  .charmander {
+    background: #ff0000;
+    border: 1px solid #b43838;
+    content: url(images/charmander.png);
+  }
+
+  .personaje {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+  }
+  
+  .grayScale {
+    filter: grayscale(100%);
+  }
+
+/*========== Fin tablero de juego ========*/
+
+/* ========= Inicio panel derecho ========= */
+.configuracion{
+  width: 50%;
+  height: auto;
+  background-color: #cdcdcd;
+  margin: 7% auto 5% 0;
+  text-align: center;
+  border-radius: 2%;
+  border: solid 1px #9b9b9b;
+}
+
+#img-btn-iniciar{
+  content: url(images/btn-jugar.png);
+  width: 15vh;
+  height: 10vh;
+}
+
+#img-btn-iniciar:hover{
+  filter: brightness(150%);
+  border-radius: 2%;
+}
+
+#nivel-personalizado {
+  width: 70%;
+}
+
+/* ========= Inicio panel derecho ========= */
+
+.hide{
+  display: none;
+}
+
+#header {
+  padding: 15px;
+}
+
+#titulo {
+  content: url(images/simon-dice-titulo.png);
+  width: 30%;
+  height: auto;
+  margin: auto;
+}
+
+footer {
+  border: 1px dashed ;
+  padding: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .gameboard {
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  .configuracion{
+    margin: 5% auto;
+  }
+
+  #titulo{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gameboard {
+    width: 100%;
+  }
+
+  #titulo{
+    width: 60%;
+  }
+}
+
